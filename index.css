@@ -1,0 +1,65 @@
+body.main {
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2b4671;
+  }
+  
+  .LogIn {
+    background-color: #89ABE3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  .LogIn:hover {
+    box-shadow: 0 4px 10px rgb(17, 14, 15);
+    transition: transform 0.3s, box-shadow 0.5s; 
+  }
+  
+  
+  .LogIn h1{
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .LogIn label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .LogIn input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .LogIn button {
+    background-color: #ffffff;
+    color: #89ABE3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .LogIn button:hover {
+    background-color:#2b4671;
+    transform: scale(1.05);
+  }
+  
+  #message {
+    color: #d9534f;
+    margin-top: 20px;
+    font-weight: bold;
+  }
