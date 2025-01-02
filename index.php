@@ -7,7 +7,7 @@
     <body class="main">
         <div class="LogIn">
         <h1>Log in</h1><br>
-        <form id="loginForm" action="dashboardi.html" method="post">
+        <form id="loginForm" action="dashboard.html" method="post">
         <label for="user">Perdoruesi: </label>
         <input type="text" id="user" name="user">
          <br><br>
