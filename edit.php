@@ -85,7 +85,7 @@ $row = $result->fetch_assoc();
             width: 100%;
             padding: 10px;
             font-size: 18px;
-            background-color:rgb(199, 85, 189);
+            background-color:rgb(224, 55, 128);
             color: white;
             border: none;
             border-radius: 5px;
@@ -94,7 +94,7 @@ $row = $result->fetch_assoc();
         }
 
         form input[type="submit"]:hover {
-            background-color:rgb(199, 85, 189);
+            background-color:rgb(224, 55, 128);
         }
     </style>
 </head>
