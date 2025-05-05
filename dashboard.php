@@ -18,7 +18,7 @@
   </div>
 
   <div class="main-content">
-    <h1 style="color: #557AC7;;">Dashboard</h1>
+    <h1 style="color:rgb(199, 85, 189);">Dashboard</h1>
     <div class="cards">
       
       <?php

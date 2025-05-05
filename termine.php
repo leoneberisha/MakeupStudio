@@ -33,7 +33,7 @@ while ($row = $result->fetch_assoc()) {
         background-color: #f4f4f4;
     }
     th {
-        background-color: #557AC7;
+        background-color:rgb(199, 85, 189);
         color: #f4f4f4;
     }
     .no-data {
@@ -51,7 +51,7 @@ while ($row = $result->fetch_assoc()) {
 <?php include('components/header.php') ?>
 
   <div class="main-content">
-    <h1 style="color: #557AC7;">Terminet</h1>
+    <h1 style="color:rgb(199, 85, 189);">Terminet</h1>
 
     <?php
     session_start();
