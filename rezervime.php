@@ -1,4 +1,52 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezervo</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<?php include('components/header.php') ?>
+
+  <div class="main-content">
+    <div class="form-container">
+      <h2>Rezervo Tani</h2>
+      <form method="POST">
+        <div class="form-group">
+          <label for="name">Emri:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="booking_date">Data e Rezervimit:</label>
+          <input type="date" id="booking_date" name="booking_date" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Ora:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <div class="select-container">
+            <label for="makeup-type">Zgjidh Llojin e Makeup-it:</label>
+            <select id="makeupType" name="makeupType" required>
+              <option value="" disabled selected>Zgjidh një opsion</option>
+              <option value="bridal">Bridal</option>
+              <option value="soft">Soft</option>
+              <option value="simple">Simple</option>
+              <option value="glamorous">Glamorous</option>
+            </select>
+          </div>
+          
+        <div class="form-group">
+          <input type="submit" value="Dërgo Rezervimin">
+        </div>
+      </form>
+    </div>
+  </div>
+  <?php
 // Përfshi skedarin që lidh me DB
 include('db.php'); 
 
@@ -35,4 +83,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Mbyll lidhjen me DB
 $conn->close();
 ?>
-
+  <footer>
+    <p>© 2024 Makeup Studio. Të gjitha të drejtat e rezervuara.</p>
+    <p>Na kontaktoni: <a href="mailto:Sellma@makeupstudio.com">info@makeupstudio.com</a> | +383 44 123 456</p>
+  </footer>
+</body>
+</html>

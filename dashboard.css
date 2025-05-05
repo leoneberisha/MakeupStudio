@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:  #89ABE3;
+    background-color:  #557AC7;
   }
   
   .sidebar h2 {
@@ -40,11 +40,11 @@
   }
   
   .sidebar li:hover {
-    background-color: #537fc5;
+    background-color: #557AC7;
     border-radius: 5px;
   }
   .sidebar a {
-    text-decoration: none; /* Heq vijën poshtë tekstit */
+    text-decoration: none;
     color: #fff;
   }
   
@@ -68,7 +68,7 @@
   }
   
   .card {
-    background-color: #89ABE3;
+    background-color: #557AC7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -88,42 +88,16 @@
     margin: 10px 0;
   }
   .card :hover{
-    font-weight: bold; /* Teksti theksohet për efekt */
-    border-radius: 5px; /* Cepa pak të rrumbullakosur */
-    transform: translateX(10px); /* Lëvizje e vogël djathtas */
-    transition: transform 0.3s, background-color 0.3s; /* Animacion */
+    font-weight: bold; 
+    border-radius: 5px; 
+    transform: translateX(10px); 
+    transition: transform 0.3s, background-color 0.3s; 
   }
   .card:hover {
-    transform: scale(1.05); /* Zmadhohet paksa kur e prek */
-    box-shadow: 0 4px 10px rgb(37, 16, 31); /* Hijë më e theksuar */
-    transition: transform 0.3s, box-shadow 0.5s; /* Animacion i lehtë */
-  }
-  
-  .percentage {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .percentage.positive {
-    background-color: #4caf50;
-    color: #fff;
-  }
-  
-  .percentage.neutral {
-    background-color: #ffc107;
-    color: #fff;
-  }
-  
-  .percentage.negative {
-    background-color: #f44336;
-    color: #fff;
-  }
-  
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgb(37, 16, 31); 
+    transition: transform 0.3s, box-shadow 0.5s; 
+  }  
   footer {
     width: 100%;
     background-color: #43484d;
@@ -144,18 +118,20 @@
   }
   
   .form-container {
-    background: #89ABE3;
+    background:#ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     margin: 0 auto;
     margin-top: 100px;
+    border: 1px solid rgb(179, 172, 172);
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.1);
+    
   }
   
   .form-container h2 {
     text-align: center;
-    color: #fff;
+    color: #000000;
   }
   
   .form-group {
@@ -165,7 +141,7 @@
   .form-group label {
     display: block;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
     margin-bottom: 5px;
     
   }
@@ -173,36 +149,48 @@
   .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 8px;
     border-radius: 5px;
     box-sizing: border-box;
+    border: 1px solid   rgb(179, 172, 172);
+
   }
   
   .form-group input[type="submit"] {
-    background: #4caf50;
-    color: white;
+    background-color: #557AC7;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
-  
   }
   .select-container {
-    margin: 20px 0; /* Hapësirë sipër dhe poshtë */
+    margin: 20px 0; 
+    
+   
   }
   .select-container label {
-    display: block; /* Vendos etiketën në rresht të veçantë */
-    font-weight: bold; /* Bën tekstin e etiketës më të theksuar */
-    color: #fff; /* Ngjyra e bardhë për tekstin, për t'u përshtatur me sfondin */
-    margin-bottom: 10px; /* Hapësirë midis etiketës dhe dropdown */
+    
+    display: block; 
+    font-weight: bold; 
+    color: #020101; 
+    margin-bottom: 10px; 
   }
   
   .select-container select {
-    width: 100%; /* Dropdown zë gjithë hapësirën e disponueshme */
-    padding: 10px; /* Hapësirë e brendshme për tekstin */
-    border: 1px solid #ddd; /* Kornizë e lehtë për dropdown */
-    border-radius: 5px; /* Cepa pak të rrumbullakosur */
-    background-color: #fff; /* Sfond i bardhë */
-    color: #333; /* Ngjyra e tekstit të përzgjedhur */
-    font-size: 16px; /* Madhësia e tekstit për dropdown */
-    cursor: pointer; /* Shfaq treguesin si dorë kur kalon mbi dropdown */
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    background-color: #fff; 
+    color: #333; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border: 1px solid rgb(93, 92, 92);
   }
+
+  button{
+    border: 0;
+    color:  #557AC7;
+    
+  }
+
+  

@@ -16,7 +16,21 @@
         <li><a href="index.php">Dil </a></li>
         </ul>
   </div>
+  <?php
+  include('db.php'); 
 
+$sql = "SELECT * FROM `dashboard`";
+$result = $conn->query($sql);
+
+if (!$result) {
+    die("Error: " . $conn->error);
+}
+
+$reservations = [];
+while ($row = $result->fetch_assoc()) {
+    $reservations[] = $row;
+}
+?>
   <div class="main-content">
     <h1 style="color: #89ABE3;">Dashboard</h1>
     <div class="cards">
@@ -59,3 +73,17 @@
   </footer>
 </body>
 </html>
+
+
+
+
+<div class="select-container">
+  <label for="makeup-type">Zgjidh Llojin e Makeup-it:</label>
+  <select id="makeupType" name="makeupType" required>
+    <option value="" disabled selected>Zgjidh një opsion</option>
+    <option value="bridal">Bridal</option>
+    <option value="soft">Soft</option>
+    <option value="simple">Simple</option>
+    <option value="glamorous">Glamorous</option>
+  </select>
+</div>

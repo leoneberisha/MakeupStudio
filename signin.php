@@ -20,7 +20,7 @@ include "db.php";
         <input type="pass" id="pass" name="pass">
         <br><br>
         <button type="submit">Sign in</button> <br><br>
-      <a href="login.php" style="text-decoration: none;">
+      <a href="index.php" style="text-decoration: none;">
       <button type="button">Log in</button>
   </a>
   <?php

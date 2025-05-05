@@ -6,11 +6,11 @@ body.main {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #2b4671;
+    background-color: #e1e3e6;
   }
   
   .LogIn {
-    background-color: #89ABE3;
+    background-color: #557AC7;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
