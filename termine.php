@@ -31,9 +31,10 @@ while ($row = $result->fetch_assoc()) {
         padding: 10px;
         text-align: left;
         background-color: #f4f4f4;
+      
     }
     th {
-        background-color:rgb(224, 55, 128);;
+        background-color:rgb(107, 97, 101);;
         color: #f4f4f4;
     }
     .no-data {
