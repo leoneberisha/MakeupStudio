@@ -28,3 +28,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
 }
 ?>
 echo "<script>alert('Rekordi u fshi me sukses!'); window.location.href='terminet.php';</script>";
+
+
